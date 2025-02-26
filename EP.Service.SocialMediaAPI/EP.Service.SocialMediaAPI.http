@@ -1,0 +1,6 @@
+@EP.Service.SocialMediaAPI_HostAddress = http://localhost:5117
+
+GET {{EP.Service.SocialMediaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

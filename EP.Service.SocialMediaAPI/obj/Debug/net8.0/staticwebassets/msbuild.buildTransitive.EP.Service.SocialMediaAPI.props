@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\EP.Service.SocialMediaAPI.props" />
+</Project>
