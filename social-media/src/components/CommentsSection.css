@@ -1,0 +1,346 @@
+/* Comments Modal Container */
+
+
+.saved-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.comments-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 650px;
+  background-color: #1d1f26;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  height: 80%; /* Set height to allow scrolling */
+  overflow: hidden;
+}
+
+/* Modal Header */
+.modal-header {
+  /* background-color: #6200ea; */
+  background-color: #1d1f26;
+    color: #ffffff;
+
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.modal-cmt{
+  /* background-color: yellowgreen; */
+  margin-right: 250px;
+
+}
+
+.modal-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.comment-pin{background-color: transparent;
+  border: none;
+color: #fff;
+cursor: pointer;
+font-weight: bold;}
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Modal Content (Scroll only comments) */
+.modal-content {
+  background-color: #2b2e36;
+  flex-grow: 1;
+  padding: 16px;
+  margin-left: 40px;
+  overflow-y: auto;
+  max-height: calc(100% - 140px); /* Reserve space for header and input */
+}
+
+/* Comment Item */
+.comment-item {
+  display: flex;
+  align-items: flex-start;
+  
+  /* border-bottom: 1px solid #f0f0f0; */
+  padding-bottom: 12px;
+}
+
+.comment-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+/* Comment Avatar */
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+/* Comment Content */
+.comment-content {
+  flex: 1;
+}
+
+.comment-bubble {
+  background-color: transparent;
+  border-radius: 8px;
+ 
+  
+}
+
+.comment-username {
+  font-weight: bold;
+  margin-bottom: 14px;
+  color: white;
+}
+
+.comment-div {
+  align-items: center;
+  display: flex;
+}
+
+.comment-text {
+  font-size: 14px;
+  color: white;
+  margin-left: 20px;
+}
+
+.comment-timestamp {
+  font-size: 12px;
+  color: #999;
+  margin-left: 5px;
+}
+
+/* Comment Input Section (fixed at the bottom) */
+.comment-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+ 
+  background-color: #1d1f26;
+  position: relative;
+  bottom: 0;
+  margin-left: 23px;
+  width: 100%;
+}
+
+.comment-text-input {
+  width: 65%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  /* border: 1px solid #ccc; */
+  border: none;
+}
+
+.send-comment-button {
+  /* background-color:  #6200ea; */
+ 
+
+  /* border: 2px solid rgb(29, 140, 237); */
+  border: none;
+  padding: 2px 10px;
+  border-radius: 15%;
+ background: transparent;
+  color: rgb(29, 140, 237);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.send-comment-button:hover{
+  color: rgb(29, 140, 237);
+}
+
+.send-comment-button i {
+  font-size: 18px;
+}
+
+/* Success Message */
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.empty-comments{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+ 
+  padding: 32px 16px;
+  background-color: #292b32;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Scrollbar Styling (Optional) */
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+  display: none;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+.comment-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.delete-comment-button {
+  position: absolute;
+  top: 10px;
+  color: wheat;
+  font-size: 20px;
+  right: 0;
+  background: none;
+  border: none;
+ 
+  cursor: pointer;
+}
+
+/* Reply Section */
+.reply-content {
+align-items: center;
+justify-content: right;
+ display: flex; color: white;
+ /* gap: 10px; */
+  
+}
+
+.reply-content-comment {
+  align-items: center;
+  justify-content: right;
+   display: flex;
+   gap: 10px;
+   color: white;
+    
+  }
+
+ 
+.reply-section button {
+  color: rgb(29, 140, 237);
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 12px;
+  transition: background 0.3s;
+}
+
+.send-reply{
+  display: flex;
+  align-items: center;
+
+}
+.replies-list {
+  margin-left: 20px;
+  padding: 8px 0;
+}
+
+.reply-item {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.reply-item p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+.reply-item strong {
+  color: #333;
+  font-weight: bold;
+}
+
+
+
+/* Reply Input */
+.reply-section input[type="text"] {
+  width: 100%;
+ 
+  padding: 5px;
+  border:none;
+  color: white;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border 0.3s;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .comments-modal {
+    width: 100%;
+    border-radius: 0;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  .modal-content {
+    padding: 8px;
+  }
+
+  .comment-input {
+    flex-direction: column;
+  }
+
+  .comment-text-input {
+    width: 100%;
+    margin-right: 0;
+    
+  }
+
+  .send-comment-button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+

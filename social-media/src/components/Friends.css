@@ -1,0 +1,120 @@
+.friends {
+  background-color: #1d1f26; /* Dark background */
+  padding: 15px;
+  box-shadow: 
+    0 -2px 2px -2px rgba(255, 255, 255, 0.3), /* Top shadow */
+    -2px 0 2px -2px rgba(255, 255, 255, 0.3); /* Left shadow */
+    color: rgb(229, 233, 236);
+  
+ border-top: 1px solid rgba(255, 255, 255, 0.3); 
+
+  margin-top: 55px;
+  width: 270px;
+  /* scrollbar-width: none; */
+ 
+
+  
+}
+
+.pagi-prev{
+  color: #007bff;
+ 
+}
+
+
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 7px 0;
+}
+
+.post-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes the image circular */
+}
+
+.users {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  width: 100%; /* Makes the users section stretch to full width */
+  gap: 20px;
+  font-size: 14px;
+}
+
+.users p {
+  margin: 0;
+  flex-grow: 1; /* Expands to take available space */
+  text-align: left; /* Aligns text to the left */
+}
+
+.users span {
+  margin-left: auto; /* Pushes "Active Now" to the extreme right */
+  text-align: right; /* Aligns the text */
+  display: flex;
+  align-items: center; /* Aligns the text and dot vertically */
+  
+}
+
+.users span::after {
+  content: "●"; /* Adds the green dot */
+  color: green; /* Sets the color of the dot */
+  font-size: 12px; /* Adjusts the size of the dot */
+  margin-left: 5px; /* Adds spacing between "Active Now" and the dot */
+}
+
+p:hover {
+  cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+.pagination {
+ 
+  display: flex;
+  justify-content: space-between;
+}
+.pagination .pagi-next {
+  color: lightgreen;
+}
+
+.pagination button {
+  padding:0 5px;
+  margin-top: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 5px;
+ 
+}
+
+.pagination button:disabled {
+ 
+  cursor: not-allowed;
+}
+
+.selected {
+  background-color: #292b32;
+ border-radius: 10px;
+ 
+}
+
+.selected img {
+  border: 2px solid #007bff; /* Optional: Highlight image border for selected user */
+}
+.selected p{
+  font-weight: bold;  color: white;
+}
+.selected span{
+  font-weight: bold;
+  color: white;
+}
+
+

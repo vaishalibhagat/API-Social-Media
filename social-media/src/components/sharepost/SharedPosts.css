@@ -1,0 +1,134 @@
+/* SharedPosts.css */
+
+/* General Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+}
+
+/* Heading */
+
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 640px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Post Card */
+.post-card {
+  background-color: #292b32;
+  
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.post-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.post-card .content {
+  padding: 1rem;
+ 
+}
+
+.post-card .content h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.post-card .content p {
+  font-size: 0.875rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.post-card .content .user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.post-card .content .user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.post-card .content .user-info .username {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.no-posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Adjust height as needed */
+  font-size: 1.5rem;
+  color: #555;
+  text-align: center;
+}
+
+
+.post-card .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #292b32;
+    color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.post-card .actions a {
+  font-size: 0.875rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post-card .actions a:hover {
+  color: #0056b3;
+}

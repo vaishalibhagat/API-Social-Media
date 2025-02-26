@@ -1,0 +1,234 @@
+.sidebar {
+    width: 200px;
+    background-color: #292b32;
+    color: #ffffff;
+    height: 95vh;
+    padding: 20px;border-top: 1px solid rgba(255, 255, 255, 0.3); 
+ 
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+  }
+
+  .logos{
+   margin-top: 65px;
+   
+  }
+
+  .logout{
+    /* background: #000; */
+    /* margin-top: 10px; */
+    margin-top: 0;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* background-color: #292b32; */
+    /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); */
+    margin-bottom: 20px;
+    /* border-radius: 20px; */
+    padding: 10px;
+  }
+  
+  /* .profile-pic {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  }
+   */
+  h4 {
+    margin: 5px;
+    font-size: 16px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 10px;
+  }
+  
+  .menu li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .sidebar-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .menu li:hover {
+    color: lightblue;
+   
+  }
+
+  .menu li.selected {
+  font-weight: bold;
+  border-left: 5px solid lightblue; /* Add border on the left */
+  padding-left: 16px; /* Add padding to give space between text and border */
+ 
+}
+
+
+
+.menu li.selected:hover {
+  color: lightblue; /* Ensures the color stays the same when hovered over a selected item */
+}
+
+  
+  .pages {
+    margin-top: 30px;
+  }
+  
+  .pages h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .pages ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  
+  
+  .pages ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .pages ul li span {
+    font-weight: bold;
+  }
+  
+  .green {
+    color: lightgreen;
+  }
+  
+  .purple {
+    color: violet;
+  }
+  
+  .blue {
+    color: lightblue;
+  }
+  
+  .red {
+    color: lightcoral;
+  }
+
+  .modall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  
+  .modall-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+
+    .input-img{
+     margin: 30px 0 10px 140px ;
+    }
+
+
+    .modal-input{
+      background-color:white ;
+     color: black;
+      width: 90%;
+      border: 2px solid black;
+     
+      
+    }
+  }}
+  
+  .modal-cancel-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+  }
+  
+  .modal-input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .modal-submit-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-submit-btn:hover {
+    background: #0056b3;
+  }
+
+  /* Switch Account Icon */
+.switch-account {
+  margin-left: auto;
+  font-size: 18px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.switch-account:hover {
+  color: #007bff; /* Add a hover effect */
+}
+
+.dropdown {
+  position: absolute;
+  top: 150px; /* Adjust to align below the profile section */
+ left: 140px;
+  width: 150px;
+  background-color: #1d1f26;
+
+  color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 10px;
+  cursor: pointer;
+ 
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #333;
+}

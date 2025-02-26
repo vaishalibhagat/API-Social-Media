@@ -1,0 +1,333 @@
+
+  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+
+   
+   
+
+    .post {
+      background-color: #2b2e36;
+      padding: 15px;
+      margin-bottom: 40px;
+      border-radius: 10px;
+     
+    }
+  }
+
+ 
+  
+  .post-description {
+    overflow: hidden; /* Hide the overflowed text */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    max-height: 50px; /* Limit the height if necessary */
+    line-height: 2; /* Adjust line spacing */
+  }
+  
+
+  .search-bar {
+    height: 60px; /* Fixed height for the search bar */
+    display: flex;
+    align-items: center;
+    width: 230px;
+   margin: 0 0 10px 260px;
+    background-color: #292b32;
+    border-radius: 20px;
+    padding: 1px 10px;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+  }
+
+  .search-icon {
+    color: #aaa;
+    cursor: pointer;
+    
+  }
+
+
+  
+  .post-section-main {
+    border-top: 1px solid rgba(255, 255, 255, 0.3); 
+   /* margin-top: 100px; */
+    flex-grow: 1; /* Fills remaining space */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+    padding: 10px 100px;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  
+
+  .post-section::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+
+ 
+  .search-bar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .post-images :hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 0; /* Ensure image stays below details */
+  }
+  
+  .post-input input {
+    width: 100%;
+    padding: 10px;
+    margin: 30px 0;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  
+  .post-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .post-header img {
+    border-radius: 50%;
+    width: 50px;
+
+  }
+
+  .post-header-ele{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .post-header-ele span{
+    font-size: 10px;
+    margin-bottom:5px ;
+  }
+
+  .post-header-ele .name-tag{
+    font-size: 15px;
+  }
+
+  
+  
+  .post-images img {
+    width: 95%;
+    height: 500px;
+    margin: 1px 1px;
+    
+  }
+
+  .post-images2 img {
+    width: 95%;
+    height: 500px;
+    margin: 1px 1px;
+    
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure vertical alignment */
+    margin-top: 10px;
+  }
+  
+  .left-icons {
+    display: flex;
+    gap: 10px; /* Add spacing between icons on the left */
+  }
+
+  .comment-icon {
+    cursor: pointer;
+  }
+
+  .share-icon{
+   cursor: pointer;
+  }
+  
+
+  .menu-container {
+    position: relative;
+    margin-left: auto;
+   
+    
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .menu-dropdown {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #292b32;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    z-index: 1000;
+    width: 180px;
+    overflow: hidden;
+    padding: 10px 10px;
+    
+  }
+
+  .heart-icon.liked {
+    color: red;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  
+  .menu-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  /* .heart-icon{
+   
+    color: red;
+  } */
+  
+  .menu-item:hover {
+    background-color: #444;
+  }
+
+  .modal-share {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+
+
+  .modal-share-labal{
+    background-color: #2b2e36;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+   
+    .label-share{
+     font-size: 12px;
+    }
+
+    .input-share{
+     background-color: transparent;
+     border: none;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      margin-left: 40px;
+      padding: 5px; font-size: 12px;
+      width: 230px;
+     
+    }
+  }
+
+  .modal-actions-share {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn-share {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-share-share {
+    background-color: transparent;
+    font-weight: bold;
+    color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+   
+  }
+
+ 
+  
+  .modal-content-share {
+    background-color: #292b32;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%;
+    position: relative; /* Important for positioning the cancel button */
+  }
+  
+  .btn-cancel-share { 
+    background-color: transparent;
+    color: #fff;
+    position: absolute; /* Position relative to .modal-content-share */
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+    margin-top: 10px;
+  
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-details p {
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .user-details img {
+    /* border: 2px solid #ddd; */
+    padding: 2px;
+    background-color: rgb(4, 81, 235);;
+  }
+  
+  .error-message {
+    margin-top: 15px;
+    color: #ff4c4c;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffe6e6;
+    border: 1px solid #ffcccc;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  
+  
+  
+  
